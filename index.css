@@ -86,4 +86,55 @@ body {
     font-size: 18px;
     color: #777;
   }
-  
+  .partner-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #444;
+    padding: 25px 0;
+}
+.partner-section .partners p{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.partner-section .project p{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.partner-section .client p{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.partner-section .meeting p{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.portfolio-section{
+    background: url("images/6.jpg") no-repeat center ;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+}
+
+
+.portfolio-section p {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    color: #fff;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:440px){
+    .partner-section{
+        display: grid;
+        grid-gap: 25px;
+        width: 100%;
+    }
+}
