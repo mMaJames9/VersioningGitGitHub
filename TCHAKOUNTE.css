@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+body{
+    background: #eed;
+}
+.header .navigate{
+    display: flex;
+    display: hidden;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-bottom: solid 2px black;
+}
+
+.header .navigate ul li{
+    display: inline-block;
+}
+.header .navigate ul li a img{
+    height: 20px;
+    width: 20px;
+    margin: 0 15px;
+    
+}
+
+.navigate a img{
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+    
+}
+
+.heading{
+    text-align: center;
+    padding: 100px 0 50px;
+}
+.heading h2{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.heading p{
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.heading p span {
+    padding: 5px;
+    background-color: black;
+    color: #fff;
+    font-weight: 600;
+}
+
+.main-header{
+    width: 100%;
+    height: 65vh;
+    background: url("images/5.jpg") no-repeat bottom ;
+    background-size: cover;
+}
+
+.main-header .main-header-content{
+    position: relative;
+    top: 40%;
+    padding-left: 20px;
+}
+
+.main-header-content p{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 0;
+}
+.main-header-content h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 0 15px;
+}
+.main-header-content button{
+    padding: 10px 15px;
+    text-transform: uppercase;
+    background-color: rgba(250, 250, 250, 0.9);
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+
+/* HEADING COMPLETE */
+.main-container{
+    
+    padding: 25px 50px 50px;
+    display: flex;
+    grid-gap: 15px;
+}
+
+.title-heading{
+    text-align: center;
+    background-color: #fff;
+    width: 35%;
+    
+}
+
+.title-heading h2{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: fantasy;
+    padding: 10px 0;
+}
+.title-heading p{
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI';
+}
+.title-heading p span{
+    font-weight: 300;
+}
+
+.title-heading .image-description img{
+    width: 95%;
+    height: 35vh;
+}
+.image-description p {
+    text-align: justify;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+.image-description p span{
+    font-weight: bolder;
+}
+.image-description .review-part {
+   padding: 20px 10px;
+   display: flex;
+   justify-content: space-between;
+}
+.image-description .review-part p{
+    padding: 7px 15px;
+    font-size: 1rem;
+    border: solid #555 1px;
+}
+.image-description .review-part p img{
+    height: 12px;
+    width: 12px;
+}
+.review-part .replies{
+    background-color: black;
+    color: #fff;
+}
+.review-part .replies p span{
+    padding: 3px 8px;
+    background-color: #eed;
+    color: black;
+}
+
+/* PROFILE PART */
+.profile{
+    
+    padding: 0 15px;
+}
+
+.profile .profile-img{
+    background: url("images/5.jpg");
+    background-size: cover;
+    height: 60vh;
+}
+.profile .profile-description{
+    background: black;
+    color: #fff;
+    padding: 0 5px;
+}
+
+.profile-description h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    padding: 10px 0;
+}
+.profile-description p{
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+/* POSTS PART*/
+.post-section{
+    padding: 35px 15px;
+   
+}
+
+.post-section .post-title{
+    padding: 10px 10px;
+    font-weight: 500;
+    font-size: 1.7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: #fff;
+}
+
+.post-section .posted{
+    padding: 15px 15px;
+    background: #fff;
+    
+}
+.post-section .posted .post{
+    display: flex;
+    padding: 10px 0;
+}
+.post-section .posted .author{
+    padding: 0 10px 5px;
+}
+.post-section .posted .author h5{
+    font-size: 1rem;
+}
+.post-section .posted .post img{
+    height: 70px;
+    width: 90px;
+}
