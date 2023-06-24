@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PROJET IABD | Page secondaire</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-  <header>
-    <h1>MISSE MISSE ANTHONY JAMES</h1>
-  </header>
+  <div class="fixed-header-nav">
+    <header>
+      <div class="container">
+        <h1>MISSE MISSE ANTHONY JAMES</h1>
+      </div>
+    </header>
   
-  <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="MISSE_MISSE.html" class="active">MISSE MISSE</a></li>
-    </ul>
-  </nav>
+    <nav class="">
+      <div class="container">
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#experience">Expérience académique</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>  
   
   <button onclick="window.location.href='index.html'" class="back-button">Retour Page Principale</button>
   
   <main class="container">
-    <section class="intro-text">
+    <section id="about" class="intro-text">
       <h2>À propos de MISSE MISSE ANTHONY JAMES</h2>
       <p>Je suis MISSE MISSE ANTHONY JAMES, un étudiant passionné d'informatique, spécialisé en Intelligence Artificielle et Big Data à Keyce Informatique Yaoundé, Bastos.</p>
       <p>J'ai développé un vif intérêt pour les domaines de l'intelligence artificielle, de l'apprentissage automatique et de l'analyse de données en raison de leur potentiel à résoudre des problèmes complexes et à créer des solutions innovantes.</p>
       <p>Je suis constamment à la recherche de nouvelles opportunités d'apprentissage et de projets qui me permettent d'approfondir mes connaissances et d'explorer les dernières avancées technologiques.</p>
     </section>
     
-    <section>
+    <section id="experience">
       <h2>Expérience académique</h2>
       <ul>
         <li>Bachelor en Informatique - ICT University (2019-2021)</li>
@@ -34,38 +46,57 @@
       </ul>
     </section>
     
-    <section>
+    <section id="skills">
       <h2>Compétences</h2>
       <ul>
         <li>Programmation : Python, Java</li>
         <li>Apprentissage automatique (Machine Learning) : TensorFlow, scikit-learn...</li>
         <li>Analyse de données : pandas, NumPy...</li>
         <li>Big Data : Apache Hadoop, Apache Spark</li>
-        <li>Visualisation de données : Matplotlib, Ploty, Tableau...</li>
+        <li>Visualisation de données : Matplotlib, Plotly, Tableau...</li>
         <li>Langages Web : HTML, CSS, JavaScript, PHP...</li>
       </ul>
     </section>
     
-    <section>
+    <section id="projects">
       <h2>Projets</h2>
+      <div class="portfolio-item">
+        <img src="images/1.jpg" alt="Project 1">
+        <h3>Nom du projet 1</h3>
+        <p>Description du projet 1</p>
+        <a href="project1.html">Voir le projet</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/2.jpg" alt="Project 2">
+        <h3>Nom du projet 2</h3>
+        <p>Description du projet 2</p>
+        <a href="project2.html">Voir le projet</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/3.jpg" alt="Project 3">
+        <h3>Nom du projet 3</h3>
+        <p>Description du projet 3</p>
+        <a href="project3.html">Voir le projet</a>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
       <ul>
-        <li>Développement d'un système de recommandation basé sur l'apprentissage automatique pour une plateforme de streaming de musique, utilisant des algorithmes de filtrage collaboratif.</li>
-        <li>Classification automatique des images de télédétection à l'aide de réseaux de neurones convolutifs, pour la détection des caractéristiques géographiques.</li>
-        <li>Analyse de sentiment des médias sociaux pour la prédiction des tendances du marché, en utilisant des techniques de traitement du langage naturel et d'apprentissage automatique.</li>
-        <li>Développement d'une application de chatbot pour l'assistance aux utilisateurs, en utilisant des modèles de langage et des réseaux de neurones récurrents.</li>
+        <li>"Titre de l'article 1" - Publié dans Revue 1</li>
+        <li>"Titre de l'article 2" - Publié dans Revue 2</li>
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Certification Python - Coursera</li>
+        <li>Certification Machine Learning - Coursera</li>
       </ul>
     </section>
     
-    <section>
-      <h2>Expérience professionnelle</h2>
-      <ul>
-        <li>Assistant de recherche en Intelligence Artificielle chez XYZ Corporation (Depuis Janvier 2023)</li>
-        <li>Freelance en développement web pour des petites entreprises locales (Depuis 2021)</li>
-        <li>Stagiaire en en développement web chez XYZ Corporation (2019)</li>
-      </ul>
-    </section>
-    
-    <section>
+    <section id="contact">
       <h2>Contact</h2>
       <p>N'hésitez pas à me contacter pour toute question, opportunité de collaboration ou demande d'information complémentaire :</p>
       <ul>
@@ -74,29 +105,19 @@
         <li>LinkedIn : <a href="https://www.linkedin.com/in/anthony-misse" target="_blank">Anthony Missemisse</a></li>
       </ul>
     </section>
-    
-    <section class="partner-section">
-      <div class="partners">
-        <p>Partenaires</p>
-      </div>
-      <div class="project">
-        <p>Projets</p>
-      </div>
-      <div class="client">
-        <p>Clients</p>
-      </div>
-      <div class="meeting">
-        <p>Réunions</p>
-      </div>
-    </section>
-    
-    <section class="portfolio-section">
-      <p>Portfolio</p>
+
+    <section id="testimonials">
+      <h2>Témoignages</h2>
+      <blockquote class="testimonials">
+        <p>"Anthony est un étudiant exceptionnel, toujours prêt à relever de nouveaux défis. Il a une véritable passion pour l'IA et le Big Data, et son enthousiasme est contagieux." - Professeur X</p>
+      </blockquote>
     </section>
   </main>
   
   <footer>
-    <p>&copy; 2023 IABD M2. Tous droits réservés.</p>
+    <div class="container">
+      <p>&copy; 2023 IABD M2. Tous droits réservés.</p>
+    </div>
   </footer>
 </body>
 </html>
