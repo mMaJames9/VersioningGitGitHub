@@ -7,86 +7,269 @@
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    min-height: 100vh;
-    background-color: #f7f7f7;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f2f2f2;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #666;
+}
+
+a {
+  color: #ff5722;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff5722;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Header */
+header {
+  background-color: #1c2331;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* Navigation */
+nav {
+  background-color: #ff5722;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+nav ul li a.active {
+  color: #ffeb3b;
+}
+
+/* Fixed Header and Navbar */
+.fixed-header-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #fff; /* Adding a background color so content doesn't show through */
+}
+
+/* Adding padding-top to the main content */
+main {
+  margin-top: 200px; /* Adjust this value depending on the height of your fixed header and navbar */
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Back Button */
+button.back-button {
+  background-color: #1c2331;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button.back-button:hover {
+  background-color: #212121;
+}
+
+/* Main Sections */
+section {
+  margin-bottom: 40px;
+}
+
+.intro-text h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero-bg.jpg") no-repeat center;
+  background-size: cover;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.portfolio-section p {
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background: url("images/6.jpg") no-repeat center ;
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+}
+
+.portfolio-item img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Partner Section */
+.partner-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #f7f7f7;
+  padding: 25px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.partner-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.partner-section ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #1c2331;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.testimonials {
+  margin: 30px auto;
+  margin-bottom: 120px;
+  padding: 20px;
+  border-left: 5px solid #333;
+  font-size: 1.2em;
+  font-style: italic;
+  color: #333;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+.testimonials:before {
+  font-size: 3em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+  color: #333;
+}
+
+.testimonials:after {
+  font-size: 3em;
+  position: absolute;
+  right: 10px;
+  bottom: -10px;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  nav, .partner-section {
+    flex-direction: column;
   }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  nav {
-    background-color: #f44336;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
+
   nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1, h2, h3 {
+    font-size: 1.5rem;
   }
   
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  .portfolio-section p, .intro-text h2, section h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
     padding: 10px;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #ffeb3b;
-  }
-  
-  nav ul li a.active {
-    color: #ffeb3b;
-  }
-  
-  button.back-button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    position: fixed;
-    bottom: 60px;
-    right: 20px;
-    z-index: 1;
-  }
-  
-  button.back-button:hover {
-    background-color: #555;
-  }      
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
   }
   
   footer p {
